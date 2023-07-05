@@ -1,7 +1,7 @@
 # This Makefile is used to build and execute the tests when "make check"
 # is run.
 
-AM_CXXFLAGS = -I../include/
+AM_CXXFLAGS = -I@abs_top_srcdir@/include/
 LDADD = ../src/libcds.la
 
 check_PROGRAMS = testHuffman testSequence testQuantile testBitSequence testArray toArray2 toArray timeSequence
